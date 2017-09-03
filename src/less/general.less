@@ -1,0 +1,41 @@
+@import "lessVars";
+
+body {
+	color: #444;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	outline: none;
+}
+
+button {
+	height: 24px;
+	padding: 0 5px;
+	border: 1px @color-border solid;
+	border-radius: 2px;
+	background: #fff;
+	line-height: 23px;
+	transition: color 0.2s ease-out, background-color 0.2s ease-out;
+
+	&.active,
+	&:hover {
+		border-color: @color-blue;
+		background-color: @color-blue;
+		color: #fff;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1 {
+	text-align: center;
+}
