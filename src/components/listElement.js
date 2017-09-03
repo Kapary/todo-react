@@ -12,6 +12,7 @@ export const ListElement = (props) => {
   return (
     <li className={itemClassNames}>
       <a
+        href="#toggle-item-state"
         className="item-state-control"
         onClick={() => onStateControlClick(props.item)}
         title={buttonCopy}>
@@ -25,6 +26,7 @@ export const ListElement = (props) => {
         onKeyPress={(e) => onKeyPress(e, item)}
       />
       <a
+        href="#remove-item"
         className="item-remove"
         data-element-id={itemId}
         onClick={(e) => onRemoveListElement(e)}
@@ -34,6 +36,3 @@ export const ListElement = (props) => {
     </li>
   );
 };
-
-
-
