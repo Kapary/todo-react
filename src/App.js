@@ -54,7 +54,7 @@ class App extends Component {
     const itemId = Number(e.target.dataset.elementId);
     const listItems = this.state.listItems;
 
-    listItems.filter((item, index) => {
+    listItems.forEach((item, index) => {
       if (item.id === itemId) {
         listItems.splice(index, 1);
       }
